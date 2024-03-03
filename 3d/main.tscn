@@ -1,0 +1,49 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://floor.tscn" type="PackedScene" id=1]
+[ext_resource path="res://obstacle.tscn" type="PackedScene" id=2]
+[ext_resource path="res://player.tscn" type="PackedScene" id=3]
+
+[node name="Main" type="Spatial"]
+
+[node name="floor2" parent="." instance=ExtResource( 2 )]
+transform = Transform( 5.30571, 0, 0, 0, 2.51885, 0, 0, 0, 1, 5.72221, -0.113602, 23.3483 )
+
+[node name="floor9" parent="floor2" instance=ExtResource( 2 )]
+transform = Transform( 0.429804, 0, -1.75532e-09, 0, 0.499678, 0, 7.45057e-09, 0, 2.38042, -2.33334, -0.0850192, -28.5817 )
+
+[node name="floor2" parent="floor2" instance=ExtResource( 2 )]
+transform = Transform( 0.00139814, 0, 0.80775, 0, 1.16325, 0, -1.92493, 0, 0.183031, -0.427032, 0.56708, -28.8404 )
+
+[node name="floor4" parent="floor2" instance=ExtResource( 2 )]
+transform = Transform( 0.188476, 0, 0, 0, 3.03709, 0, 0, 0, 1, -2.77761, 7.15815e-06, 1.14699 )
+
+[node name="floor3" parent="floor2" instance=ExtResource( 2 )]
+transform = Transform( 0.718255, 0, 0, 0, 0.397007, 0, 0, 0, 6.07574, 2.20004, 0, 0.85796 )
+
+[node name="floor5" parent="floor2" instance=ExtResource( 2 )]
+transform = Transform( 0.371011, 0, 0, 0, 1.39068, 0, 0, 0, 2.38042, -1.93868, 0.513054, -0.762865 )
+
+[node name="floor6" parent="floor2" instance=ExtResource( 2 )]
+transform = Transform( 0.0350372, 0, 0.253678, 0, 4.66042, 0, -14.4905, 0, 0.0172669, 2.88025, 0.118392, -34.9242 )
+
+[node name="floor7" parent="floor2" instance=ExtResource( 2 )]
+transform = Transform( 2.7385, 0, -7.02129e-10, 0, 4.67263, 0, 1.49011e-08, 0, 1.34958, -0.0281478, -2.23741e-05, -44.4256 )
+
+[node name="floor" parent="floor2" instance=ExtResource( 2 )]
+transform = Transform( 0.00693639, 0, 0.448615, 0, 0.592604, 0, -2.86872, 0, 0.0305357, -1.4885, 0.349534, -28.0519 )
+
+[node name="floor8" parent="floor2" instance=ExtResource( 2 )]
+transform = Transform( 2.73134, 0, -7.02129e-10, 0, 4.01919, 0, 4.38461e-08, 0, 1.32024, -0.0281478, -2.23741e-05, -25.7968 )
+
+[node name="floor10" parent="floor2" instance=ExtResource( 2 )]
+transform = Transform( 0.46747, 0, 0, 0, 1.27168, 0, 0, 0, 1.857, 0.774444, 1.08172, -28.8228 )
+
+[node name="floor11" parent="floor2" instance=ExtResource( 2 )]
+transform = Transform( 0.879194, 0, 0, 0, 0.373448, 0, 0, 0, 5.6297, 1.91436, 2.52212, -32.9165 )
+
+[node name="floor" parent="." instance=ExtResource( 1 )]
+transform = Transform( 50.0766, 0, 0, 0, 0.155496, 0, 0, 0, 34.2713, 0, -0.0733442, 0 )
+
+[node name="player" parent="." instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 5.84649, 0.00537819, 2.53039 )
